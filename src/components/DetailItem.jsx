@@ -12,7 +12,7 @@ const DetailItem = ({ data }) => {
     setNumber(0);
 
     countInterval.current = setInterval(() => {
-      initialNumber += data.quantity / 42.5555; // sec * 10
+      initialNumber += data.quantity / 22.5555; // sec * 10
 
       if (initialNumber > data.quantity) {
         setNumber(data.quantity);
@@ -30,7 +30,7 @@ const DetailItem = ({ data }) => {
 
   return (
     <Waypoint onEnter={handleCounting} onLeave={resetCounting}>
-      <div className=" bg-white flex sm:gap-3 gap-1 items-center">
+      <div className=" bg-white flex sm:gap-5 gap-1 items-center">
         <div
           className="xl:h-[100px] xl:w-[100px] sm:w-[70px] sm:h-[70px] w-[40px] h-[40px] 
         bg-[#F8FAFC] flex justify-center items-center rounded-lg"

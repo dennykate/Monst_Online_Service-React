@@ -24,8 +24,10 @@ const ScrollToTop = () => {
     <button
       className={`fixed sm:bottom-7 sm:right-7 bottom-2 right-2 w-[40px] h-[40px] flex justify-center items-center 
       z-50 bg-[#086AD8] opacity-100 hover:opacity-100
-    rounded-sm  transition-all duration-500 ease-in-out cursor-pointer md:opacity-80 
-    ${showBtn ? "translate-y-0 opacity-100" : "translate-y-52 opacity-0"}`}
+    rounded-sm  transition-all duration-1000 ease-in-out cursor-pointer md:opacity-80 
+    ${
+      showBtn ? "translate-y-0 opacity-100 fixed" : "translate-y-52 opacity-0"
+    }`}
       onClick={handleScroll}
     >
       <HiArrowSmUp color="white" size={22} />
