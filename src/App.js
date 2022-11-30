@@ -20,7 +20,7 @@ const App = () => {
     }, 1500);
   }, []);
 
-  // if (isLoading) return <LoadingPage />;
+  if (isLoading) return <LoadingPage />;
 
   return (
     <div className="overflow-hidden">
